@@ -16,7 +16,7 @@ const ranks = [
   "Q",
   "K",
 ];
-const suits = ["♦", "♣", "♥", "♠"];
+const suits = ["@", "#", "^", "*"];
 
 const cards = ref([]);
 const isShuffle = ref(false);
@@ -86,7 +86,7 @@ function calculateBestScoring() {
     A: 14,
   };
 
-  const suitOrder = { "♣": 1, "♦": 2, "♥": 3, "♠": 4 };
+  const suitOrder = { "@": 1, "#": 2, "^": 3, "*": 4 };
 
   let highestRankCount = 0;
   let winningRank = null;
